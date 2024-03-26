@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Github user generator">
+    <title>DevFinder</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+</head>
+
+<body>
+    <header>
+        <h1>devfinder</h1>
+        <p class="white">light <i class="fa-solid fa-sun" id="LightMode"></i></p>
+        <p class="dark hidden">dark <i class="fa-regular fa-moon" id="Darkmode"></i></p>
+    </header>
+    <main>
+        <div class="input2">
+            <form>
+                <input type="text" id="search" class="search-input" name="username" placeholder="Search Github username">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="submit" class="btn" value="Search">
+            </form>
+        </div>
+        <div class="container hidden">
+            <div class="profile">
+                <img src="assets/image/profile.png  " alt="photo de profil">
+                <div class="infos">
+                    <p class="username"></p>
+                    <p class="id"></p>
+                    <p class="since"></p>
+                </div>
+            </div>
+            <div class="txt">
+                <p></p>
+            </div>
+            <div class="other-infos">
+                <div class="div1">
+                    <p class="repos">Repos</p>
+                    <p class="repos-number"></p>
+                </div>
+                <div class="div2">
+                    <p class="followers">Followers</p>
+                    <p class="followers-number"></p>
+                </div>
+                <div class="div3">
+                    <p class="following">Following</p>
+                    <p class="following-number"></p>
+                </div>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="city"></p>
+                <i class="fa-solid fa-link"></i>
+                <p class="url"></p>
+                <i class="fa-brands fa-twitter"></i>
+                <p class="twitter"></p>
+                <i class="fa-solid fa-building"></i>
+                <p class="building"></p>
+            </div>
+    </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9de8273207.js" crossorigin="anonymous"></script>
+</body>
+</html>

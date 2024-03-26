@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&family=Poor+Story&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Timmana&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Space mono;
+    background-color: #141D2F;
+    color: white;
+}
+
+header {
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dark,
+.white {
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.dark i,
+.white i {
+    cursor: pointer;
+}
+
+img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.input2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #1E2A47;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+.container-white {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+.id {
+    color: #0079FF;
+}
+
+form {
+    width: 95%;
+}
+
+.search-input {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    outline: none;
+    text-align: center;
+    color: white;
+    background-color: #1E2A47;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+
+
+.input-white2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    outline: none;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+
+::placeholder {
+    font-size: 13px;
+    opacity: 1;
+    color: white;
+}
+
+.btn {
+    position: absolute;
+    right: 25px;
+    top: 90px;
+    padding: 10px;
+    background-color: #0079FF;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    color: #0079FF;
+    left: 40px;
+    font-size: 22px;
+    top: 98px;
+}
+
+.profile {
+    margin: 30px 20px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.hidden {
+    display: none;
+}
+
+.infos {
+    margin: 20px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.username,
+.id,
+.since {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+}
+
+.txt {
+    margin-left: 30px;
+}
+
+.txt p {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.other-infos {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #141D2F;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.other-infos-white {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F6F8FF;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact {
+    position: relative;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.fa-twitter {
+    position: absolute;
+    color: #0079FF;
+    font-size: 25px;
+    top: 65px;
+    left: -35px;
+}
+
+.fa-location-dot {
+    position: absolute;
+    color: maroon;
+    font-size: 25px;
+    top: -3px;
+    left: -35px;
+}
+
+.fa-link {
+    position: absolute;
+    color: gray;
+    font-size: 25px;
+    top: 30px;
+    left: -40px; 
+}
+
+.fa-building {
+    position: absolute;
+    color: green;
+    font-size: 25px;
+    top: 100px;
+    left: -32px;
+}
+
+.div1,
+.div2,
+.div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-infos p {
+    margin-bottom: 10px;
+}
+
+.twitter {
+    opacity: 0.4;
+}
+
+.repos,
+.following,
+.followers {
+    opacity: 0.4;
+}
+
+.followers-number,
+.following-number,
+.repos-number {
+    font-weight: 800;
+}
+
+.building {
+    margin-bottom: 40px;
+}
+
+.light-mode {
+    background-color: #F6F8FF;
+    color: #4B6A9B;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .search-input {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+        padding: 30px;
+        outline: none;
+        text-align: center;
+        color: white;
+        background-color: #1E2A47;
+        border: none;
+        width: 100%;
+        height: 40px;
+    }
+
+
+    .input-white2 {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+        padding: 30px;
+        position: relative;
+        outline: none;
+        text-align: center;
+        color: black;
+        background-color: white;
+        border: none;
+        width: 100%;
+        height: 40px;
+    }
+
+    form {
+        margin-top: 50px;
+        position: relative;
+        width: 70%;
+    }
+
+    .btn {
+        top: 10px;
+        right: 15px;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 30px;
+        top: 15px;
+        left: 20px;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    img {
+        width: auto;
+        height: 200px;
+    }
+
+    .infos {
+        margin-left: 70px;
+    }
+
+    .username {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .id {
+        margin-bottom: 20px;
+    }
+
+    .txt p {
+        margin-top: 30px;
+        letter-spacing: 2px;
+    }
+
+    .other-infos {
+        margin-top: 50px;
+
+        justify-content: space-between;
+    }
+
+    .repos,
+    .followers,
+    .following {
+        opacity: 1;
+        font-size: 20px;
+    }
+
+    .repos-number,
+    .followers-number,
+    .following-number {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    .div1,
+    .div2,
+    .div3 {
+        align-items: start;
+    }
+
+    .div2 {
+        margin-left: 30px;
+    }
+
+    .contact {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .contact p {
+        font-size: 15px;
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .fa-twitter {
+        top: 108px;
+    }
+
+    .fa-location-dot {
+        top: 33px;
+    }
+
+    .fa-link {
+        position: absolute;
+        left: 223px;
+        top: 34px;
+    }
+
+    .fa-building {
+        position: absolute;
+        top: 108px;
+        left: 230px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+        max-width: 730px;
+    }
+
+    .infos {
+        width: 100%;
+        /* margin-left: 400px; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .id, .since p {
+        width: 40%;
+    }
+
+    .username {
+        width: 60%;
+        font-size: 50px;
+    }
+
+    img {
+        position: relative;
+        top: 30px;
+        left: 30px;
+        width: 117px;
+        height: 117px;
+    }
+
+    .txt p {
+        margin-left: 175px;
+    }
+
+    .id {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+
+    .other-infos {
+        width: 80%;
+    }
+
+    .contact {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact p {
+        margin-left: 10px;
+    }
+
+    .contact i {
+        font-size: 40px;
+    }
+
+    .fa-twitter {
+        top: 135px;
+        left: -35px;
+    }
+
+    .fa-location-dot {
+        top: 35px;
+        left: -30px;
+    }
+
+    .fa-link {
+        left: 340px;
+        top: 35px;
+    }
+
+    .fa-building {
+        top: 130px;
+        left: 353px;
+    }
+
+    .contact p {
+        font-size: 13px;
+    }
+}
